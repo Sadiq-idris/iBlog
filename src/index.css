@@ -1,0 +1,151 @@
+*
+{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body
+{
+  font-size:15px;
+  font-family:verdana;
+  width:100%;
+}
+
+.header{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  padding:15px 30px;
+  border-bottom:2px solid pink;
+}
+
+.header h2
+{
+  color:pink;
+}
+
+.header nav a
+{
+  color:grey;
+  text-decoration:none;
+  margin-left:20px;
+  transition:all 200ms ease-in;
+}
+
+.header nav a:hover
+{
+  border-top:2px solid pink;
+  padding-top:10px;
+  color:pink;
+}
+
+.home{
+  width:70%;
+  margin:20px auto;
+  
+}
+
+.home h1{
+  text-align:center;
+  margin:20px 0;
+}
+
+.home .list-blog
+{
+  padding:10px 20px;
+  margin-bottom:10px;
+  border-bottom:2px solid pink;
+  border-top:2px solid pink;
+  border-radius:10px;
+}
+
+.home .list-blog h2{
+  margin:5px 0;
+  color:grey;
+}
+
+.home .list-blog a{
+  text-decoration:none;
+  color:black;
+}
+
+
+.home .list-blog h2:hover
+{
+  color:pink;
+  cursor:pointer;
+}
+
+.blog-detail 
+{
+  width:80%;
+  margin:20px auto;
+}
+
+.blog-detail h2, .create h2, .not-found h2{
+  text-align:center;
+  color:pink;
+  text-transform:capitalize;
+  margin:10px 0;
+}
+
+.blog-detail small{
+  margin:10px 0;
+}
+
+.blog-detail article p{
+  margin:10px 0;
+}
+
+.create, .not-found{
+  width:80%;
+  margin:20px auto;
+}
+
+.create input, .create textarea, .create select{
+  width:100%;
+  padding:10px 5px;
+  background-color:white;
+  border:1px solid lightgrey;
+  display:block;
+  border-radius:5px;
+  margin:10px 0;
+  font-size:16px;
+}
+
+.create form{
+  margin:20px 0;
+  font-size:16px;
+}
+
+.create .btn,.blog-detail .btn{
+  background-color:pink;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  
+}
+
+.not-found{
+  text-align: center;
+}
+
+@media(max-width:400px){
+
+  .header{
+    display:block;
+  }
+  .header h2{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .header nav{
+    text-align: center;
+    margin:10px auto;
+  }
+}
